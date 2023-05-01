@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+}
+/* ----------------------- */
+.login-div {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.username-div, .password-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.username-label, .password-label {
+    margin-bottom: 5px;
+}
+.username, .password{
+    border: 0.1px solid black;
+    height: 30px;
+    border-radius: 2px; 
+    margin-bottom: 10px;
+}
+.sign-in-forget-div {
+    display: flex;
+    justify-content: space-between;
+}
+.forgot-password-button {
+    align-self: center;
+    background-color: white;
+}
+.sign-in-button, .forgot-password-button {
+    border: 0.1px solid black;
+    border-radius: 2px;
+    height: 30px;
+    padding: 4px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: medium;
+}
+.sign-in-button {
+    background-color: black;
+    color: white;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+.sign-in-button:hover, .forgot-password-button:hover {
+    background-color: #ced4da;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.sign-up-link {
+    text-decoration: none;
+    color: #f94144;
+}
+@media only screen and (max-width:295px) {
+    .sign-in-button {
+        width: 99%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .sign-in-forget-div {
+        flex-direction: column;
+    }
+    .sign-in-button {
+        margin-bottom: 5px;
+    }
+    .forgot-password-button {
+        width: 99%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .footer-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .home-link {
+        font-size: x-large;
+    }
+}
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: x-large;
+    }
+    .username, .password {
+        height: 40px;
+    }
+    .sign-in-button, .forgot-password-button {
+        height: 40px;
+        font-size: x-large;
+    } 
+}

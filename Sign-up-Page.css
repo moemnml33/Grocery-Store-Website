@@ -1,0 +1,181 @@
+body {
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+}
+.grey-hr {
+    margin: 0px;
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px 
+    solid #ced4da;
+    padding: 0;
+}
+
+/* ---- main nav + footer ---- */
+.main-nav {
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ced4da;
+}
+.footer-nav {
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-link, .contact-link, .about-link, .socials-link {
+    text-decoration: none;
+    color: #f94144;
+}
+.home-link, .contact-link, .about-link, .socials-link {
+    margin: 10px;
+}
+.cart-button-main-nav, .user-button {
+    margin: 0px;
+    padding: 4px;
+    border: 0.1px solid black;
+    border-radius: 1px;
+    color: black;
+    background-color: #ced4da;
+    height: 96%;
+}
+.cart-link, .login-link {
+    color: black;
+    text-decoration: none;
+}
+.cart-button-main-nav:hover, .user-button:hover, .logout-button:hover {
+    cursor: pointer;
+}
+.user-button {
+    padding: 8px;
+}
+.cart-button-main-nav:hover, .user-button:hover {
+    cursor: pointer;
+}
+.Home-div {
+    display: inline-block;
+    margin: 10px;
+    width: 100%;
+}
+/* ----------------- */
+
+/* ---- Search bar div ---- */
+.search-bar-div {
+    height: 40px;
+}
+.search-form {
+    /* allow the form to occupy the desired space  */
+    height: 100%;
+    display:flex;  
+}
+.search-bar {
+    font-size: medium;
+    border: none; 
+    /* border-bottom: 1px solid #ced4da; */
+    width: 100%;
+    /* Top horizontal left*/
+    padding: 0% 3% 0%;
+}
+::placeholder {
+    /* placeholder text color */
+    color: #ced4da;
+}
+.search-bar:focus {
+    /* remove outline when clicking the search bar */
+    outline: none;
+}
+#search-button {
+    border: none;
+}
+#search-button:hover {
+    cursor: pointer;
+}
+/* ------------------------ */
+.sign-up-banner-div {
+    text-align: center;
+    font-size: large;
+    padding: 15px;
+    background-color: #f94144;
+    color: white;
+}
+.sign-up-div {
+    margin: 1px;
+    border: 1px solid #ced4da;
+}
+#personal-info-form {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.username-div, .email-div, .password-div, .confirm-password-div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.username, .email, .password, .confirm-password, .sign-up-button, .reset-button {
+    border: 0.1px solid black;
+    height: 30px;
+    border-radius: 2px; 
+    margin-bottom: 10px;
+    width: 95%;
+}
+.buttons-div {
+    display: flex;
+    margin-top: 10px;
+}
+.sign-up-button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+}
+.reset-button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    color: black;
+    background-color: white;
+}
+.sign-up-button, .reset-button {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.sign-up-button:hover, .reset-button:hover {
+    background-color: #ced4da;
+    transition: 0.2s;
+    cursor: pointer;
+}
+@media only screen and (max-width:429px) {
+    #personal-info-form {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .username-div, .email-div, .password-div, .confirm-password-div {
+        width: 100%;
+    }
+    .buttons-div {
+        flex-direction: column;
+    }
+}   
+@media only screen and (min-width: 430px) {
+    .footer-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 800px) {
+    body, .sign-up-banner-div {
+        font-size: x-large;
+    }
+    .username, .email, .password, .confirm-password, .sign-up-button, .reset-button {
+        height: 40px;
+    }
+    input {
+        font-size: medium;
+    }
+}

@@ -1,0 +1,292 @@
+body {
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.grey-hr {
+    margin-top: 0px;
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px 
+    solid #ced4da;
+    padding: 0;
+}
+/* ---- main nav + footer ---- */
+.main-nav {
+    height: 40px;
+    padding: 0px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ced4da;
+}
+.footer-nav {
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-link, .contact-link, .about-link, .back-link, .socials-link {
+    text-decoration: none;
+    color: #f94144;
+}
+.home-link, .contact-link, .about-link, .back-link, .socials-link {
+    margin: 10px;
+}
+.cart-button-main-nav, .user-button {
+    margin: 0px;
+    padding: 4px;
+    border: 0.1px solid black;
+    border-radius: 1px;
+    color: black;
+    background-color: #ced4da;
+    height: 96%;
+}
+.cart-link, .login-link {
+    color: black;
+    text-decoration: none;
+}
+.cart-button-main-nav:hover, .user-button:hover, .logout-button:hover {
+    cursor: pointer;
+}
+.user-button {
+    padding: 8px;
+}
+.Home-div {
+    display: inline-block;
+    margin: 10px;
+    width: 100%;
+}
+/* ----------------- */
+
+/* ---- Search bar div ---- */
+.search-bar-div {
+    height: 40px;
+}
+.search-form {
+    /* allow the form to occupy the desired space  */
+    height: 100%;
+    display:flex;  
+}
+.search-bar {
+    font-size: medium;
+    border: none; 
+    /* border-bottom: 1px solid #ced4da; */
+    width: 100%;
+    /* Top horizontal left*/
+    padding: 0% 3% 0%;
+
+}
+::placeholder {
+    /* placeholder text color */
+    color: #ced4da;
+}
+.search-bar:focus {
+    /* remove outline when clicking the search bar */
+    outline: none;
+}
+#search-button {
+    border: none;
+    border-radius: 4px;
+}
+/* ------------------------ */
+.product-description {
+    margin-top: 5px;
+    border-top: 1px solid #ced4da;
+    display: flex;
+    flex-direction: column;
+}
+.product-img {
+    height:50%;
+    width: 50%;
+    margin: 2px;
+    border-bottom: 1px solid #ced4da;
+    align-self: center;
+}
+.product-info-div {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.product-name {
+    color: black;
+    margin: 0px;
+    margin-top: 2px;
+    font-style: italic;
+    font-size: large;
+    align-self: flex-start;
+}
+.product-price {
+    color: black;
+    font-style: italic;
+    font-size: small;
+    align-self: flex-start;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.total-display {
+    font-size: large;
+    margin-top: 10px;
+}
+.add-to-cart-button {
+    padding: 0px;
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-top: 10px;
+    width: 95%; 
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+    align-self:flex-start;
+}
+.product-name, .product-price, .add-to-cart-button, .qty-label, .total-display {
+    margin-left: 10px;
+}
+.form-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#qty-select {
+    width: 40px;
+}
+#qty-type-select {
+    width: 50px;
+}
+.qty-type-div {
+    margin-right: 4%;
+}
+#qty-select, #qty-type-select {
+    padding: 0px;
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    height: 17px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
+.price {
+    margin-right: 15px;
+}
+#qty-select:focus, #qty-type-select:focus {
+    outline: none;
+}
+.add-to-cart-button:hover {
+    background-color: #ced4da;
+    transition: 0.1s;
+    cursor: pointer;
+}
+/* ------------------------ */
+.prod-description-section {
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+.prod-description-button {
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    font-weight:lighter;
+    font-size: large;
+    background-color: white;
+    padding: 0px;
+    margin: 10px;
+}
+.prod-description-div {
+    margin-left: 10px;
+    font-size: small;
+    display: none;  
+}
+.prod-description-button:hover {
+    cursor: pointer;
+    transition: 0.1s;
+    color: #f94144;
+}
+.footer-nav {
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 590px) {
+    .product-description {
+        flex-direction: row;
+        justify-content:start;
+    }
+    .product-info-div {
+        width: 100%;
+    }
+    .product-img {
+        height: 30%;
+        width: 30%;
+        border: none;
+        border-right: 1px solid #ced4da;
+        align-self: flex-start;
+    }
+    .product-name {
+        font-size: x-large;
+    }
+    .product-price {
+        font-size: medium;
+    }
+    .qty-label, .qty-type-label {
+        font-size: large;
+    }
+    .footer-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .prod-description-div {
+        font-size: medium;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .home-link {
+        font-size: x-large;
+    }
+    .product-name {
+        font-size: xx-large;
+    }
+    .product-price {
+        font-size: large;
+    }
+    .qty-label, .qty-type-label, .price, .total-display {
+        font-size: x-large;
+    }
+    #qty-select, #qty-type-select {
+        height: 25px;
+        width: 50px;
+    }
+    .add-to-cart-button {
+        height: 35px;
+        font-size: medium;
+    }
+    .about-link, .contact-link, .socials-link, .back-link, .prod-description-button, .total-display {
+        font-size: x-large;
+    }
+    .prod-description-div {
+        font-size: large;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .product-price {
+        font-size: x-large;
+    }
+    .qty-label, .qty-type-label, .price, .total-display {
+        font-size: xx-large;
+    }
+    .add-to-cart-button {
+        height: 35px;
+        font-size: large;
+    }
+    .about-link, .contact-link, .socials-link, .back-link, .prod-description-button {
+        font-size: xx-large;
+    }
+}
